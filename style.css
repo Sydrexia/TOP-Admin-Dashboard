@@ -1,0 +1,21 @@
+html {
+    margin: 0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.dashboard {
+    border: 2px solid red;
+    grid-row: 1 / span 2;
+}
+
+.top-bar {
+    border: 2px solid blue;
+}
+
+.main {
+    border: 2px solid green;
+}
