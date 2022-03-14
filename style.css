@@ -1,5 +1,6 @@
-html {
+body {
     margin: 0;
+    height: 100;
 }
 
 .page {
@@ -18,4 +19,73 @@ html {
 
 .main {
     border: 2px solid green;
+}
+
+/* Dashboard Styling */
+
+.dashboard {
+    background-color: #0ea5e9;
+    color: white;
+}
+
+.top-icon {
+    margin: auto;
+    text-align: center;
+}
+
+.menu-options {
+    margin-left: 1vw;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-left: -25px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+
+li img {
+    justify-self: center;
+    align-self: center;
+}
+
+li p {
+    font-family: sans-serif;
+    font-size: 23px;
+    grid-column: 2 / span 2;
+}
+
+/* Top Bar Styling */
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.row1 input {
+    height: 40%;
+    width: 50%;
+    margin: auto;
+    margin-left: 7vw;
+}
+
+.row1 p {
+    margin-right: 7vw;
+}
+
+.row2 div {
+    margin: auto;
+}
+
+.row2 button {
+    margin: auto;
 }
