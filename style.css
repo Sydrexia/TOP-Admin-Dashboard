@@ -7,19 +7,22 @@ html, body {
 .page {
     display: grid;
     grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     height: 100%;
 }
 
 .dashboard {
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 5;
 }
 
 .top-bar {
     border: 2px solid blue;
+    grid-row: 1 / 2;
 }
 
 .main {
     border: 2px solid green;
+    grid-row: 2 / span 4;
 }
 
 /* Dashboard Styling */
@@ -75,6 +78,7 @@ li p {
 .top-bar {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .row {
@@ -107,6 +111,11 @@ li p {
     margin-left: 5vw;
 }
 
+#search-bar {
+    background-color: grey;
+    border-radius: 15px;
+}
+
 .row1-dog {
     display: flex;
     height: 45px;
@@ -125,10 +134,38 @@ li p {
     margin: auto;
 }
 
-.row2 div {
+.row1-dog-big {
+    display: flex;
+    height: 65px;
+    width: 65px;
+    background-color: lightblue;
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+#big-dog {
+    height: 55px;
+    display: block;
     margin: auto;
 }
 
 .row2 button {
     margin: auto;
 }
+
+.greeting {
+    margin-left: 0;
+    margin-right: 8vw;
+}
+
+.greeting p {
+    margin: 10px 0;
+}
+
+#intro {
+    font-size: 14px;
+}
+
