@@ -16,7 +16,6 @@ html, body {
 }
 
 .top-bar {
-    border: 2px solid blue;
     grid-row: 1 / 2;
 }
 
@@ -85,6 +84,11 @@ li p {
     display: flex;
 }
 
+.row1 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
 .row1 input {
     height: 40%;
     width: 50%;
@@ -112,7 +116,8 @@ li p {
 }
 
 #search-bar {
-    background-color: grey;
+    background-color: rgb(233, 230, 230);
+    border-style: none;
     border-radius: 15px;
 }
 
@@ -154,6 +159,19 @@ li p {
 
 .row2 button {
     margin: auto;
+    color: white;
+    font-weight: bold;
+    background-color: #0ea5e9;
+    border-color: #44c4ff;
+    border-style: none;
+    border-radius: 20px;
+    width: 8vw;
+    height: 3vw;
+}
+
+.row2 button:hover {
+    background-color: #22b8fd;
+    cursor: pointer;
 }
 
 .greeting {
