@@ -190,6 +190,7 @@ li p {
 
 .main {
     display: grid;
+    max-width: 100%;
     grid-template-columns: 70% 30%;
     grid-template-rows: 50% 50%;
     background-color: rgb(240, 235, 235);
@@ -197,26 +198,32 @@ li p {
 
 .projects {
     display: grid;
-    grid-template-rows: 30px 30% 30% 30%;
+    grid-template-rows: 30px repeat(auto-fill, minmax(10%, 30%));
     grid-row: 1 / span 2;
     column-gap: 3vw;
+    row-gap: 10px;
     margin-left: 4vw;
     margin-right: -4vw;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 40%));
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: auto;
     background-color: white;
     border-radius: 5px;
     padding: 5px 25px;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgb(153, 153, 153);
-    box-shadow: 5px 0 0 rgb(243, 171, 37) inset;
+    margin: 0;
+    margin-top: 5px;    
+    box-shadow: 5px 0 0 rgb(243, 171, 37) inset, 0 10px 8px 0 rgb(153, 153, 153);
 }
 
 .project-svgs {
     display: flex;
+    flex-basis: auto;
     justify-content: right;
+    margin-top: auto;
 }
 
 .project-svgs img {
@@ -239,7 +246,7 @@ li p {
 .body-text {
     font-size: 12px;
     font-family: sans-serif;
-    margin-bottom: 2vw;
+    margin-top: 5px;
 }
 
 .announcement-container {
@@ -251,6 +258,12 @@ li p {
 
 .announcement {
     margin: 0;
+}
+
+.ann-border-bottom{
+    border-bottom: 1px solid rgba(82, 81, 81, 0.493);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .announcements p {
@@ -269,4 +282,5 @@ li p {
     font-size: 10px;
     font-family: sans-serif;
     margin: 5px 0;
+    color: rgba(37, 37, 37, 0.685);
 }
